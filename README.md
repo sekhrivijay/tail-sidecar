@@ -5,6 +5,7 @@ This conatiner can be used as a sidecar container to any other application conta
 The main reason for this is to stream all the logs onto ELK or AWS Cloudwatch or other log aggregation service via standard docker log driver 
 
 Example of running the docker image and stream all the files to AWS Cloudwatch logs 
+
     docker run \
     -d \
     --name tail \
