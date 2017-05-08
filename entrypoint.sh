@@ -1,6 +1,8 @@
 #!/bin/sh
 #
 # docker-entrypoint for tailing and streaming logs files in a directory
+echo "sleeping for a minute before starting"
+sleep 60
 
 if [ -n "${LOG_DIR}" ] ; then
    cd ${LOG_DIR}
